@@ -29,7 +29,7 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import java.util.Date
 
-class DocumentScan4nerActivity : AppCompatActivity() {
+class DocumentScannerActivity : AppCompatActivity() {
     
     private lateinit var binding: ActivityDocumentScannerBinding
     private lateinit var finalDocumentBinding: DocumentFinalViewBinding
