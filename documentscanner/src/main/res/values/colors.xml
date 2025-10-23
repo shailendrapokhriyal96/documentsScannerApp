@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_background">#FF6B35</color>
+    <color name="document_header_bg">#4CAF50</color>
+</resources>

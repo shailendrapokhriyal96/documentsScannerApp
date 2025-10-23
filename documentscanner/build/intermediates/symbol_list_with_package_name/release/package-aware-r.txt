@@ -1,0 +1,5 @@
+com.documentscanner.sdk
+id captureButton
+id previewView
+layout activity_document_scanner
+string sdk_name

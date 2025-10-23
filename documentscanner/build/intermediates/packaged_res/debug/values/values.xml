@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="document_header_bg">#4CAF50</color>
+    <color name="header_background">#FF6B35</color>
+    <string name="sdk_name">Document Scanner SDK</string>
+</resources>

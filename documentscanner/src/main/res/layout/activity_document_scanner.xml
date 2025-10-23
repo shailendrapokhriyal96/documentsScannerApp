@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Camera Preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Document Overlay -->
+    <com.documentscanner.sdk.DocumentOverlayView
+        android:id="@+id/documentOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- Top Controls -->
+    <LinearLayout
+        android:id="@+id/topControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btnFlash"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_flash_off"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp" />
+
+        <ImageView
+            android:id="@+id/btnFocus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_focus"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/btnColour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_colour_selected"
+            android:padding="8dp"
+            android:text="Colour"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/status_background"
+        android:padding="12dp"
+        android:text="Position the document in view"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Captured Document Preview (Center) -->
+    <ImageView
+        android:id="@+id/capturedPreview"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/preview_background"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <!-- Full Screen Document Viewer with ViewPager -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        android:id="@+id/documentViewContainer">
+        
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/documentViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+            
+    </FrameLayout>
+
+    <!-- Page Indicator for ViewPager -->
+    <LinearLayout
+        android:id="@+id/pageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <!-- Document Viewer Controls -->
+    <LinearLayout
+        android:id="@+id/documentViewerControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btnBackToCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_save"
+            android:padding="12dp"
+            android:text="Back to Camera"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btnSaveDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_save"
+            android:padding="12dp"
+            android:text="Save Document"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Bottom Controls -->
+    <LinearLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_save"
+            android:padding="12dp"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Main Capture Button -->
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/capture_button_background">
+
+            <ImageView
+                android:id="@+id/btnCapture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_capture"
+                android:background="@drawable/capture_button"
+                android:scaleType="centerInside" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btnReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/button_reply"
+            android:padding="12dp"
+            android:text="Reply"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Final Document View -->
+    <FrameLayout
+        android:id="@+id/finalDocumentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+int id captureButton 0x0
+int id previewView 0x0
+int layout activity_document_scanner 0x0
+int string sdk_name 0x0

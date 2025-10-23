@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/anim-v21/mtrl_bottom_sheet_slide_in.xml",
+        "source": "com.documentscanner.sdk.documentscanner-material-1.6.1-13:/anim-v21/mtrl_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "com.documentscanner.sdk.documentscanner-material-1.6.1-13:/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/anim-v21/mtrl_bottom_sheet_slide_out.xml",
+        "source": "com.documentscanner.sdk.documentscanner-material-1.6.1-13:/anim-v21/mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/anim-v21/fragment_fast_out_extra_slow_in.xml",
+        "source": "com.documentscanner.sdk.documentscanner-fragment-1.3.6-29:/anim-v21/fragment_fast_out_extra_slow_in.xml"
+    },
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "com.documentscanner.sdk.documentscanner-material-1.6.1-13:/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]

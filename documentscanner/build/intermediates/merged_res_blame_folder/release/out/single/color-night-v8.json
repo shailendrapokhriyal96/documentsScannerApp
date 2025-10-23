@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/color-night-v8/material_timepicker_modebutton_tint.xml",
+        "source": "com.documentscanner.sdk.documentscanner-material-1.6.1-13:/color-night-v8/material_timepicker_modebutton_tint.xml"
+    },
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/color-night-v8/material_timepicker_button_stroke.xml",
+        "source": "com.documentscanner.sdk.documentscanner-material-1.6.1-13:/color-night-v8/material_timepicker_button_stroke.xml"
+    },
+    {
+        "merged": "com.documentscanner.sdk.documentscanner-merged_res-37:/color-night-v8/material_timepicker_clockface.xml",
+        "source": "com.documentscanner.sdk.documentscanner-material-1.6.1-13:/color-night-v8/material_timepicker_clockface.xml"
+    }
+]
