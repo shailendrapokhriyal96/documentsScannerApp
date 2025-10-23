@@ -1,3 +1,0 @@
-D:\DocumentScannerApp\documentscanner\src\main\java\com\documentscanner\sdk\DocumentScannerActivity.kt
-D:\DocumentScannerApp\documentscanner\src\main\java\com\documentscanner\sdk\DocumentScannerViewModel.kt
-D:\DocumentScannerApp\documentscanner\src\main\java\com\documentscanner\sdk\OpenCvDocumentProcessor.kt
